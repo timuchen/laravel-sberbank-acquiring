@@ -1,5 +1,4 @@
 <?php
-
 namespace Avlyalin\SberbankAcquiring\Providers;
 
 use Avlyalin\SberbankAcquiring\Client\ApiClient;
@@ -15,7 +14,6 @@ use Avlyalin\SberbankAcquiring\Models\AcquiringPayment;
 use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentStatus;
 use Avlyalin\SberbankAcquiring\Repositories\AcquiringPaymentRepository;
 use Avlyalin\SberbankAcquiring\Repositories\AcquiringPaymentStatusRepository;
-use Illuminate\Database\Eloquent\Factory;
 use Illuminate\Support\ServiceProvider;
 
 class AcquiringServiceProvider extends ServiceProvider
@@ -37,8 +35,6 @@ class AcquiringServiceProvider extends ServiceProvider
 
         $this->registerBindings();
 
-        $this->registerEloquentFactories();
-
         $this->registerCommands();
     }
 
@@ -53,17 +49,6 @@ class AcquiringServiceProvider extends ServiceProvider
             __DIR__ . '/../../config/sberbank-acquiring.php' => config_path('sberbank-acquiring.php'),
         ], 'config');
         $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
-    }
-
-    /**
-     * Регистрация фабрик
-     *
-     * @throws \Illuminate\Contracts\Container\BindingResolutionException
-     */
-    private function registerEloquentFactories()
-    {
-        $factory = $this->app->make(Factory::class);
-        $factory->load(base_path('vendor/avlyalin/laravel-sberbank-acquiring/database/factories'));
     }
 
     /**

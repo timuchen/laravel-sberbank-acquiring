@@ -1,5 +1,4 @@
 <?php
-
 namespace Avlyalin\SberbankAcquiring\Tests;
 
 use Avlyalin\SberbankAcquiring\Providers\AcquiringServiceProvider;
@@ -9,7 +8,6 @@ use Avlyalin\SberbankAcquiring\Models\ApplePayPayment;
 use Avlyalin\SberbankAcquiring\Models\GooglePayPayment;
 use Avlyalin\SberbankAcquiring\Models\SamsungPayPayment;
 use Avlyalin\SberbankAcquiring\Models\SberbankPayment;
-use Illuminate\Database\Eloquent\Factory;
 use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase as Orchestra;
 use ReflectionClass;
@@ -20,9 +18,13 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
-        $this->setUpDatabase($this->app);
+        \Illuminate\Database\Eloquent\Factories\Factory::guessFactoryNamesUsing(
+            function (string $modelName) {
+                return 'Database\Factories\\' . class_basename($modelName) . 'Factory';
+            }
+        );
 
-        $this->registerEloquentFactories($this->app);
+        $this->setUpDatabase($this->app);
     }
 
     protected function getPackageProviders($app)
@@ -49,22 +51,10 @@ class TestCase extends Orchestra
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
     }
 
-    /**
-     * Регистрация фабрик
-     *
-     * @param Application $app
-     */
-    private function registerEloquentFactories(Application $app)
-    {
-        $factory = $app->make(Factory::class);
-        $factory->load(__DIR__ . '/../database/factories');
-        $factory->load(__DIR__ . '/../vendor/laravel/laravel/database/factories');
-    }
-
     protected function createUser(array $attributes = [])
     {
         $userModel = config('sberbank-acquiring.user.model');
-        return factory($userModel)->create($attributes);
+        return $userModel::factory()->create($attributes);
     }
 
     protected function createAcquiringPayment(array $attributes = [], ...$states): AcquiringPayment
@@ -133,3 +123,4 @@ class TestCase extends Orchestra
         $reflection_property->setValue($object, $value);
     }
 }
+
