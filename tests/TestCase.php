@@ -69,32 +69,32 @@ class TestCase extends Orchestra
 
     protected function createAcquiringPayment(array $attributes = [], ...$states): AcquiringPayment
     {
-        return factory(AcquiringPayment::class)->states($states)->create($attributes);
+        return AcquiringPayment::factory()->states($states)->create($attributes);
     }
 
     protected function createSberbankPayment(array $attributes = []): SberbankPayment
     {
-        return factory(SberbankPayment::class)->create($attributes);
+        return SberbankPayment::factory()->create($attributes);
     }
 
     protected function createApplePayPayment(array $attributes = []): ApplePayPayment
     {
-        return factory(ApplePayPayment::class)->create($attributes);
+        return ApplePayPayment::factory()->create($attributes);
     }
 
     protected function createSamsungPayPayment(array $attributes = []): SamsungPayPayment
     {
-        return factory(SamsungPayPayment::class)->create($attributes);
+        return SamsungPayPayment::factory()->create($attributes);
     }
 
     protected function createGooglePayPayment(array $attributes = []): GooglePayPayment
     {
-        return factory(GooglePayPayment::class)->create($attributes);
+        return GooglePayPayment::factory()->create($attributes);
     }
 
     protected function createAcquiringPaymentOperation(array $attributes = []): AcquiringPaymentOperation
     {
-        return factory(AcquiringPaymentOperation::class)->create($attributes);
+        return AcquiringPaymentOperation::factory()->create($attributes);
     }
 
     protected function mockAcquiringPayment(string $method, $returnValue)

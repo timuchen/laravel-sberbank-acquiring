@@ -2,17 +2,27 @@
 
 declare(strict_types=1);
 
+namespace Database\Factories;
+
 use Avlyalin\SberbankAcquiring\Models\AcquiringPayment;
 use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentOperation;
 use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentOperationType;
-use Faker\Generator as Faker;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
-$factory->define(AcquiringPaymentOperation::class, function (Faker $faker) {
-    return [
-        'user_id' => factory(config('sberbank-acquiring.user.model'))->create()->getKey(),
-        'payment_id' => factory(AcquiringPayment::class)->create()->id,
-        'type_id' => AcquiringPaymentOperationType::all()->random()->id,
-        'request_json' => json_encode([$faker->word => $faker->word, $faker->word => $faker->word]),
-        'response_json' => json_encode([$faker->word => $faker->word, $faker->word => $faker->word]),
-    ];
-});
+class AcquiringPaymentOperationFactory extends Factory
+{
+    protected $model = AcquiringPaymentOperation::class;
+
+    public function definition()
+    {
+        return [
+            'user_id' => \App\Models\User::factory()->create()->getKey(),
+            'payment_id' => AcquiringPayment::factory()->create()->id,
+            'type_id' => AcquiringPaymentOperationType::all()->random()->id,
+            'request_json' => json_encode([$this->faker->word => $this->faker->word, $this->faker->word => $this->faker->word]),
+            'response_json' => json_encode([$this->faker->word => $this->faker->word, $this->faker->word => $this->faker->word]),
+        ];
+    }
+}
+
+

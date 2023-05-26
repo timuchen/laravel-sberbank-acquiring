@@ -17,7 +17,7 @@ $factory->define(AcquiringPayment::class, function () {
         'system_id' => AcquiringPaymentSystem::SBERBANK,
         'status_id' => AcquiringPaymentStatus::all()->random()->id,
         'payment_type' => SberbankPayment::class,
-        'payment_id' => factory(SberbankPayment::class)->create()->id,
+        'payment_id' => SberbankPayment::factory()->create()->id,
     ];
 });
 
@@ -25,7 +25,7 @@ $factory->state(AcquiringPayment::class, 'sberbank', function () {
     return [
         'system_id' => AcquiringPaymentSystem::SBERBANK,
         'payment_type' => SberbankPayment::class,
-        'payment_id' => factory(SberbankPayment::class)->create()->id,
+        'payment_id' => SberbankPayment::factory()->create()->id,
     ];
 });
 
@@ -33,7 +33,7 @@ $factory->state(AcquiringPayment::class, 'applePay', function () {
     return [
         'system_id' => AcquiringPaymentSystem::APPLE_PAY,
         'payment_type' => ApplePayPayment::class,
-        'payment_id' => factory(ApplePayPayment::class)->create()->id,
+        'payment_id' => ApplePayPayment::factory()->create()->id,
     ];
 });
 
@@ -41,7 +41,7 @@ $factory->state(AcquiringPayment::class, 'samsungPay', function () {
     return [
         'system_id' => AcquiringPaymentSystem::SAMSUNG_PAY,
         'payment_type' => SamsungPayPayment::class,
-        'payment_id' => factory(SamsungPayPayment::class)->create()->id,
+        'payment_id' => SamsungPayPayment::factory()->create()->id,
     ];
 });
 
@@ -49,6 +49,6 @@ $factory->state(AcquiringPayment::class, 'googlePay', function () {
     return [
         'system_id' => AcquiringPaymentSystem::GOOGLE_PAY,
         'payment_type' => GooglePayPayment::class,
-        'payment_id' => factory(GooglePayPayment::class)->create()->id,
+        'payment_id' => GooglePayPayment::factory()->create()->id,
     ];
 });

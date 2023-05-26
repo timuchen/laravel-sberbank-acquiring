@@ -38,4 +38,9 @@ class ApplePayPayment extends BasePaymentModel implements HasPaymentTokenInterfa
         'additionalParameters' => 'additional_parameters',
         'preAuth' => 'pre_auth',
     ];
+
+    protected static function newFactory()
+    {
+        return ApplePayPaymentFactory::new();
+    }
 }
