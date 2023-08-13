@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Client;
+namespace Timuchen\SberbankAcquiring\Client;
 
-use Avlyalin\SberbankAcquiring\Exceptions\HttpClientException;
-use Avlyalin\SberbankAcquiring\Exceptions\NetworkException;
+use Timuchen\SberbankAcquiring\Exceptions\HttpClientException;
+use Timuchen\SberbankAcquiring\Exceptions\NetworkException;
 
 interface HttpClientInterface
 {

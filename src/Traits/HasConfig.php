@@ -1,8 +1,8 @@
 <?php
 
-namespace Avlyalin\SberbankAcquiring\Traits;
+namespace Timuchen\SberbankAcquiring\Traits;
 
-use Avlyalin\SberbankAcquiring\Exceptions\ConfigException;
+use Timuchen\SberbankAcquiring\Exceptions\ConfigException;
 use Exception;
 use Illuminate\Config\Repository;
 use Illuminate\Contracts\Foundation\Application;
@@ -57,7 +57,7 @@ trait HasConfig
      * @param string $key
      *
      * @return Repository|Application|mixed
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\ConfigException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\ConfigException
      */
     public function getConfigParam(string $key)
     {

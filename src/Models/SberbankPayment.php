@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Models;
+namespace Timuchen\SberbankAcquiring\Models;
 
 class SberbankPayment extends BasePaymentModel
 {

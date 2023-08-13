@@ -1,6 +1,6 @@
 <?php
 
-namespace Avlyalin\SberbankAcquiring\Models;
+namespace Timuchen\SberbankAcquiring\Models;
 
 use Exception;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

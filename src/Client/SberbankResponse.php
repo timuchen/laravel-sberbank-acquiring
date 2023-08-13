@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Client;
+namespace Timuchen\SberbankAcquiring\Client;
 
-use Avlyalin\SberbankAcquiring\Exceptions\JsonException;
+use Timuchen\SberbankAcquiring\Exceptions\JsonException;
 
 class SberbankResponse
 {

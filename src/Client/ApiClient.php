@@ -1,8 +1,8 @@
 <?php
 
-namespace Avlyalin\SberbankAcquiring\Client;
+namespace Timuchen\SberbankAcquiring\Client;
 
-use Avlyalin\SberbankAcquiring\Client\Curl\Curl;
+use Timuchen\SberbankAcquiring\Client\Curl\Curl;
 
 class ApiClient implements ApiClientInterface
 {
@@ -302,8 +302,8 @@ class ApiClient implements ApiClientInterface
      * @param array $headers
      *
      * @return SberbankResponse
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function requestWithAuth(
@@ -338,8 +338,8 @@ class ApiClient implements ApiClientInterface
      * @param array $headers
      *
      * @return SberbankResponse
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function request(

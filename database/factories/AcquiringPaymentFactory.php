@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-use Avlyalin\SberbankAcquiring\Models\AcquiringPayment;
-use Avlyalin\SberbankAcquiring\Models\ApplePayPayment;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentStatus;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentSystem;
-use Avlyalin\SberbankAcquiring\Models\GooglePayPayment;
-use Avlyalin\SberbankAcquiring\Models\SamsungPayPayment;
-use Avlyalin\SberbankAcquiring\Models\SberbankPayment;
+use Timuchen\SberbankAcquiring\Models\AcquiringPayment;
+use Timuchen\SberbankAcquiring\Models\ApplePayPayment;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentStatus;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentSystem;
+use Timuchen\SberbankAcquiring\Models\GooglePayPayment;
+use Timuchen\SberbankAcquiring\Models\SamsungPayPayment;
+use Timuchen\SberbankAcquiring\Models\SberbankPayment;
 use Illuminate\Support\Str;
 
 $factory->define(AcquiringPayment::class, function () {

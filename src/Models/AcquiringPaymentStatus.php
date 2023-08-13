@@ -1,6 +1,6 @@
 <?php
 
-namespace Avlyalin\SberbankAcquiring\Models;
+namespace Timuchen\SberbankAcquiring\Models;
 
 class AcquiringPaymentStatus extends BaseModel
 {

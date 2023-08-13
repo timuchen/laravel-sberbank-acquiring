@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Repositories;
+namespace Timuchen\SberbankAcquiring\Repositories;
 
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentStatus;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentStatus;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 

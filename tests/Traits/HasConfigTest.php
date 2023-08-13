@@ -1,10 +1,10 @@
 <?php
 
-namespace Avlyalin\SberbankAcquiring\Tests\Traits;
+namespace Timuchen\SberbankAcquiring\Tests\Traits;
 
-use Avlyalin\SberbankAcquiring\Exceptions\ConfigException;
-use Avlyalin\SberbankAcquiring\Tests\TestCase;
-use Avlyalin\SberbankAcquiring\Traits\HasConfig;
+use Timuchen\SberbankAcquiring\Exceptions\ConfigException;
+use Timuchen\SberbankAcquiring\Tests\TestCase;
+use Timuchen\SberbankAcquiring\Traits\HasConfig;
 use Illuminate\Support\Facades\Config;
 
 class HasConfigTest extends TestCase

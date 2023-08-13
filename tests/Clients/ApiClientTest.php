@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Tests\Clients;
+namespace Timuchen\SberbankAcquiring\Tests\Clients;
 
-use Avlyalin\SberbankAcquiring\Client\ApiClient;
-use Avlyalin\SberbankAcquiring\Client\ApiClientInterface;
-use Avlyalin\SberbankAcquiring\Client\Curl\Curl;
-use Avlyalin\SberbankAcquiring\Client\HttpClient;
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Helpers\Currency;
-use Avlyalin\SberbankAcquiring\Tests\TestCase;
+use Timuchen\SberbankAcquiring\Client\ApiClient;
+use Timuchen\SberbankAcquiring\Client\ApiClientInterface;
+use Timuchen\SberbankAcquiring\Client\Curl\Curl;
+use Timuchen\SberbankAcquiring\Client\HttpClient;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Helpers\Currency;
+use Timuchen\SberbankAcquiring\Tests\TestCase;
 
 class ApiClientTest extends TestCase
 {

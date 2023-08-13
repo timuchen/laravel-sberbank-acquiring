@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Database\Factories;
 
-use Avlyalin\SberbankAcquiring\Models\AcquiringPayment;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentOperation;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentOperationType;
+use Timuchen\SberbankAcquiring\Models\AcquiringPayment;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentOperation;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentOperationType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class AcquiringPaymentOperationFactory extends Factory

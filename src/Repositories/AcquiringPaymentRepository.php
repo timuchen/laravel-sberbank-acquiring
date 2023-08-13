@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Repositories;
+namespace Timuchen\SberbankAcquiring\Repositories;
 
-use Avlyalin\SberbankAcquiring\Models\AcquiringPayment;
+use Timuchen\SberbankAcquiring\Models\AcquiringPayment;
 use Illuminate\Database\Eloquent\Collection;
 
 class AcquiringPaymentRepository extends BaseRepository

@@ -1,13 +1,13 @@
 <?php
-namespace Avlyalin\SberbankAcquiring\Tests;
+namespace Timuchen\SberbankAcquiring\Tests;
 
-use Avlyalin\SberbankAcquiring\Providers\AcquiringServiceProvider;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPayment;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentOperation;
-use Avlyalin\SberbankAcquiring\Models\ApplePayPayment;
-use Avlyalin\SberbankAcquiring\Models\GooglePayPayment;
-use Avlyalin\SberbankAcquiring\Models\SamsungPayPayment;
-use Avlyalin\SberbankAcquiring\Models\SberbankPayment;
+use Timuchen\SberbankAcquiring\Providers\AcquiringServiceProvider;
+use Timuchen\SberbankAcquiring\Models\AcquiringPayment;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentOperation;
+use Timuchen\SberbankAcquiring\Models\ApplePayPayment;
+use Timuchen\SberbankAcquiring\Models\GooglePayPayment;
+use Timuchen\SberbankAcquiring\Models\SamsungPayPayment;
+use Timuchen\SberbankAcquiring\Models\SberbankPayment;
 use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase as Orchestra;
 use ReflectionClass;

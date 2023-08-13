@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Commands;
+namespace Timuchen\SberbankAcquiring\Commands;
 
-use Avlyalin\SberbankAcquiring\Client\Client;
-use Avlyalin\SberbankAcquiring\Events\UpdateStatusCommandHasFailed;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentStatus;
-use Avlyalin\SberbankAcquiring\Repositories\AcquiringPaymentRepository;
+use Timuchen\SberbankAcquiring\Client\Client;
+use Timuchen\SberbankAcquiring\Events\UpdateStatusCommandHasFailed;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentStatus;
+use Timuchen\SberbankAcquiring\Repositories\AcquiringPaymentRepository;
 use Illuminate\Console\Command;
 
 class UpdateStatusCommand extends Command

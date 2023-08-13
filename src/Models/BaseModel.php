@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Models;
+namespace Timuchen\SberbankAcquiring\Models;
 
-use Avlyalin\SberbankAcquiring\Traits\HasConfig;
+use Timuchen\SberbankAcquiring\Traits\HasConfig;
 use Illuminate\Database\Eloquent\Model;
 
 abstract class BaseModel extends Model

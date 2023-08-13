@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Tests\Repositories;
+namespace Timuchen\SberbankAcquiring\Tests\Repositories;
 
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentStatus;
-use Avlyalin\SberbankAcquiring\Repositories\AcquiringPaymentStatusRepository;
-use Avlyalin\SberbankAcquiring\Tests\TestCase;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentStatus;
+use Timuchen\SberbankAcquiring\Repositories\AcquiringPaymentStatusRepository;
+use Timuchen\SberbankAcquiring\Tests\TestCase;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class AcquiringPaymentStatusRepositoryTest extends TestCase

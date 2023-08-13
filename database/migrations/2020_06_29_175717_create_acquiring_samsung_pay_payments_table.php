@@ -1,6 +1,6 @@
 <?php
 
-use Avlyalin\SberbankAcquiring\Traits\HasConfig;
+use Timuchen\SberbankAcquiring\Traits\HasConfig;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;

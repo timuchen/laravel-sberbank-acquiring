@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Client\Curl;
+namespace Timuchen\SberbankAcquiring\Client\Curl;
 
 class Curl implements CurlInterface
 {

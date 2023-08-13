@@ -24,7 +24,7 @@ composer require avlyalin/laravel-sberbank-acquiring
 
 Опубликуйте файл настроек:
 ```
-php artisan vendor:publish --provider="Avlyalin\SberbankAcquiring\Providers\AcquiringServiceProvider" --tag=config
+php artisan vendor:publish --provider="Timuchen\SberbankAcquiring\Providers\AcquiringServiceProvider" --tag=config
 ```
 
 Запустите миграции:
@@ -70,8 +70,8 @@ php artisan migrate
 в Dependency Injection.
 Резолвинг классов:
 ```php
-use Avlyalin\SberbankAcquiring\Client\ApiClient;
-use Avlyalin\SberbankAcquiring\Client\Client;
+use Timuchen\SberbankAcquiring\Client\ApiClient;
+use Timuchen\SberbankAcquiring\Client\Client;
 
 $client = $this->app->make(Client::class);
 
@@ -103,8 +103,8 @@ $apiClient = $this->app->make(ApiClient::class);
 Обязательный аргумент - сумма.
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\Client;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\Client;
 
 $client = $this->app->make(Client::class);
 $acquiringPayment = $client->register(
@@ -121,8 +121,8 @@ $status = $acquiringPayment->status->name; // 'Зарегистрирован'
 Обязательный аргумент - сумма.
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\Client;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\Client;
 
 $client = $this->app->make(Client::class);
 $acquiringPayment = $client->registerPreAuth(
@@ -139,8 +139,8 @@ $status = $acquiringPayment->status->name; // 'Зарегистрирован'
 Обязательные аргументы: id модели платежа (AcquiringPayment), сумма.
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\Client;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\Client;
 
 $client = $this->app->make(Client::class);
 $acquiringPayment = $client->deposit(
@@ -156,8 +156,8 @@ $acquiringPayment = $client->deposit(
 Обязательный аргумент - id модели платежа (AcquiringPayment).
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\Client;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\Client;
 
 $client = $this->app->make(Client::class);
 $acquiringPayment = $client->reverse(
@@ -172,8 +172,8 @@ $acquiringPayment = $client->reverse(
 Обязательные аргументы: id модели платежа (AcquiringPayment), сумма.
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\Client;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\Client;
 
 $client = $this->app->make(Client::class);
 $acquiringPayment = $client->refund(
@@ -189,8 +189,8 @@ $acquiringPayment = $client->refund(
 Обязательный аргумент - id модели платежа (AcquiringPayment).
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\Client;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\Client;
 
 $client = $this->app->make(Client::class);
 $acquiringPayment = $client->getOrderStatusExtended(
@@ -205,8 +205,8 @@ $acquiringPayment = $client->getOrderStatusExtended(
 Обязательный аргумент - **paymentToken**, полученный от системы Apple Pay. Подробнее [здесь](https://securepayments.sberbank.ru/wiki/doku.php/integration:api:rest:requests:payment_applepay).
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\Client;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\Client;
 
 $client = $this->app->make(Client::class);
 $acquiringPayment = $client->payWithApplePay(
@@ -225,8 +225,8 @@ $acquiringPayment = $client->payWithApplePay(
 Обязательный аргумент - **paymentToken**, полученный от системы Samsung Pay. Подробнее [здесь](https://securepayments.sberbank.ru/wiki/doku.php/integration:api:rest:requests:payment_samsungpay).
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\Client;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\Client;
 
 $client = $this->app->make(Client::class);
 $acquiringPayment = $client->payWithSamsungPay(
@@ -245,8 +245,8 @@ $acquiringPayment = $client->payWithSamsungPay(
 Обязательные аргументы: **paymentToken**, полученный от системы Google Pay, сумма. Подробнее [здесь](https://securepayments.sberbank.ru/wiki/doku.php/integration:api:rest:requests:payment_googlepay).
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\Client;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\Client;
 
 $client = $this->app->make(Client::class);
 $acquiringPayment = $client->payWithGooglePay(
@@ -266,8 +266,8 @@ $acquiringPayment = $client->payWithGooglePay(
 Описание [здесь](https://securepayments.sberbank.ru/wiki/doku.php/integration:api:rest:requests:getreceiptstatus).
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\ApiClient;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\ApiClient;
 
 $apiClient = $this->app->make(ApiClient::class);
 $response = $apiClient->getReceiptStatus(
@@ -290,8 +290,8 @@ if ($response->isOk) {
 Обязательный аргумент - идентификатор созданной ранее связки. Подробнее [здесь](https://securepayments.sberbank.ru/wiki/doku.php/integration:api:rest:requests:bindcard).
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\ApiClient;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\ApiClient;
 
 $apiClient = $this->app->make(ApiClient::class);
 $response = $apiClient->bindCard(
@@ -312,8 +312,8 @@ if ($response->isOk) {
 Обязательный аргумент - идентификатор созданной ранее связки. Подробнее [здесь](https://securepayments.sberbank.ru/wiki/doku.php/integration:api:rest:requests:unbindcard).
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\ApiClient;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\ApiClient;
 
 $apiClient = $this->app->make(ApiClient::class);
 $response = $apiClient->unBindCard(
@@ -334,8 +334,8 @@ if ($response->isOk) {
 Обязательный аргумент - номер (идентификатор) клиента в системе магазина. Подробнее [здесь](https://securepayments.sberbank.ru/wiki/doku.php/integration:api:rest:requests:getbindings).
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\ApiClient;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\ApiClient;
 
 $apiClient = $this->app->make(ApiClient::class);
 $response = $apiClient->getBindings(
@@ -356,8 +356,8 @@ if ($response->isOk) {
 Описание [здесь](https://securepayments.sberbank.ru/wiki/doku.php/integration:api:rest:requests:getbindingsbycardorid).
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\ApiClient;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\ApiClient;
 
 $apiClient = $this->app->make(ApiClient::class);
 $response = $apiClient->getBindingsByCardOrId(
@@ -378,8 +378,8 @@ if ($response->isOk) {
 Обязательный аргумент - идентификатор созданной ранее связки. Подробнее [здесь](https://securepayments.sberbank.ru/wiki/doku.php/integration:api:rest:requests:extendbinding).
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\ApiClient;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\ApiClient;
 
 $apiClient = $this->app->make(ApiClient::class);
 $response = $apiClient->getBindingsByCardOrId(
@@ -402,8 +402,8 @@ if ($response->isOk) {
 Обязательный аргумент - маскированный номер карты, которая использовалась для оплаты (PAN). Подробнее [здесь](https://securepayments.sberbank.ru/wiki/doku.php/integration:api:rest:requests:verifyenrollment).
 
 ```php
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\ApiClient;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\ApiClient;
 
 $apiClient = $this->app->make(ApiClient::class);
 $response = $apiClient->verifyEnrollment(
@@ -460,8 +460,8 @@ php artisan sberbank-acquiring:update-statuses --id=1 --id=7
 
 Рекомендуется добавить команду в шедулер (**app/Console/Kernel.php**):
 ```php
-    use Avlyalin\SberbankAcquiring\Commands\UpdateStatusCommand;
-    use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentStatus;
+    use Timuchen\SberbankAcquiring\Commands\UpdateStatusCommand;
+    use Timuchen\SberbankAcquiring\Models\AcquiringPaymentStatus;
 
     protected function schedule(Schedule $schedule)
     {

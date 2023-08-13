@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Factories;
 
-use Avlyalin\SberbankAcquiring\Models\ApplePayPayment;
+use Timuchen\SberbankAcquiring\Models\ApplePayPayment;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
 

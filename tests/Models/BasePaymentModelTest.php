@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Tests\Models;
+namespace Timuchen\SberbankAcquiring\Tests\Models;
 
-use Avlyalin\SberbankAcquiring\Models\BasePaymentModel;
-use Avlyalin\SberbankAcquiring\Tests\TestCase;
+use Timuchen\SberbankAcquiring\Models\BasePaymentModel;
+use Timuchen\SberbankAcquiring\Tests\TestCase;
 
 class BasePaymentModelTest extends TestCase
 {

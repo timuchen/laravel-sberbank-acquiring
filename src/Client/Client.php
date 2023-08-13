@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Client;
+namespace Timuchen\SberbankAcquiring\Client;
 
-use Avlyalin\SberbankAcquiring\Exceptions\ResponseProcessingException;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentOperation;
-use Avlyalin\SberbankAcquiring\Repositories\AcquiringPaymentStatusRepository;
-use Avlyalin\SberbankAcquiring\Traits\HasConfig;
-use Avlyalin\SberbankAcquiring\Factories\PaymentsFactory;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPayment;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentOperationType;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentStatus;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentSystem;
-use Avlyalin\SberbankAcquiring\Repositories\AcquiringPaymentRepository;
+use Timuchen\SberbankAcquiring\Exceptions\ResponseProcessingException;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentOperation;
+use Timuchen\SberbankAcquiring\Repositories\AcquiringPaymentStatusRepository;
+use Timuchen\SberbankAcquiring\Traits\HasConfig;
+use Timuchen\SberbankAcquiring\Factories\PaymentsFactory;
+use Timuchen\SberbankAcquiring\Models\AcquiringPayment;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentOperationType;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentStatus;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentSystem;
+use Timuchen\SberbankAcquiring\Repositories\AcquiringPaymentRepository;
 use Exception;
 use Illuminate\Support\Facades\Auth;
 use Throwable;
@@ -72,9 +72,9 @@ class Client
      *
      * @return AcquiringPayment
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\JsonException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\ResponseProcessingException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\AcquiringException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\JsonException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\ResponseProcessingException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\AcquiringException
      * @throws \InvalidArgumentException
      * @throws Throwable
      */
@@ -103,9 +103,9 @@ class Client
      *
      * @return AcquiringPayment
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\JsonException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\ResponseProcessingException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\AcquiringException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\JsonException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\ResponseProcessingException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\AcquiringException
      * @throws \InvalidArgumentException
      * @throws Throwable
      */
@@ -135,10 +135,10 @@ class Client
      *
      * @return AcquiringPayment
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\JsonException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\ResponseProcessingException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\JsonException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\ResponseProcessingException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \Illuminate\Database\Eloquent\ModelNotFoundException
      * @throws \InvalidArgumentException
      * @throws Throwable
@@ -201,10 +201,10 @@ class Client
      *
      * @return AcquiringPayment
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\JsonException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\ResponseProcessingException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\JsonException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\ResponseProcessingException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws Throwable
      */
     public function reverse(
@@ -262,10 +262,10 @@ class Client
      *
      * @return AcquiringPayment
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\JsonException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\ResponseProcessingException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\JsonException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\ResponseProcessingException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws Throwable
      */
     public function refund(
@@ -325,10 +325,10 @@ class Client
      *
      * @return AcquiringPayment
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\ResponseProcessingException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\JsonException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\ResponseProcessingException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\JsonException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws Throwable
      */
     public function getOrderStatusExtended(
@@ -389,10 +389,10 @@ class Client
      *
      * @return AcquiringPayment
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\ResponseProcessingException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\JsonException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\ResponseProcessingException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\JsonException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws Throwable
      */
     public function payWithApplePay(
@@ -439,10 +439,10 @@ class Client
      *
      * @return AcquiringPayment
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\ResponseProcessingException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\JsonException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\ResponseProcessingException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\JsonException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws Throwable
      */
     public function payWithSamsungPay(
@@ -490,11 +490,11 @@ class Client
      *
      * @return AcquiringPayment
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\ResponseProcessingException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\JsonException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\AcquiringException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\ResponseProcessingException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\JsonException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\AcquiringException
      * @throws Throwable
      */
     public function payWithGooglePay(
@@ -561,9 +561,9 @@ class Client
      *
      * @return AcquiringPayment
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\JsonException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\ResponseProcessingException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\AcquiringException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\JsonException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\ResponseProcessingException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\AcquiringException
      * @throws \InvalidArgumentException
      * @throws Throwable
      */
@@ -678,8 +678,8 @@ class Client
      *
      * @return AcquiringPayment
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\JsonException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\ResponseProcessingException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\JsonException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\ResponseProcessingException
      */
     private function processResponse(
         SberbankResponse $response,
@@ -722,7 +722,7 @@ class Client
      * @param array $params
      *
      * @return string|null
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\AcquiringException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\AcquiringException
      */
     private function getReturnUrl(array $params): string
     {
@@ -735,7 +735,7 @@ class Client
      * @param array $params
      *
      * @return string|null
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\AcquiringException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\AcquiringException
      */
     private function getFailUrl(array $params): ?string
     {

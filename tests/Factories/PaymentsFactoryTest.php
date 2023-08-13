@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Tests\Factories;
+namespace Timuchen\SberbankAcquiring\Tests\Factories;
 
-use Avlyalin\SberbankAcquiring\Factories\PaymentsFactory;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPayment;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentOperation;
-use Avlyalin\SberbankAcquiring\Models\ApplePayPayment;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentOperationType;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentStatus;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentSystem;
-use Avlyalin\SberbankAcquiring\Models\GooglePayPayment;
-use Avlyalin\SberbankAcquiring\Models\SamsungPayPayment;
-use Avlyalin\SberbankAcquiring\Models\SberbankPayment;
-use Avlyalin\SberbankAcquiring\Tests\TestCase;
+use Timuchen\SberbankAcquiring\Factories\PaymentsFactory;
+use Timuchen\SberbankAcquiring\Models\AcquiringPayment;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentOperation;
+use Timuchen\SberbankAcquiring\Models\ApplePayPayment;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentOperationType;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentStatus;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentSystem;
+use Timuchen\SberbankAcquiring\Models\GooglePayPayment;
+use Timuchen\SberbankAcquiring\Models\SamsungPayPayment;
+use Timuchen\SberbankAcquiring\Models\SberbankPayment;
+use Timuchen\SberbankAcquiring\Tests\TestCase;
 
 class PaymentsFactoryTest extends TestCase
 {

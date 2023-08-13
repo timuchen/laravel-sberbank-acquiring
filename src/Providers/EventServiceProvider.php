@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Providers;
+namespace Timuchen\SberbankAcquiring\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 

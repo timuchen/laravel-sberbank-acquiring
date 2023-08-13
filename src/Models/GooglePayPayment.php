@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Models;
+namespace Timuchen\SberbankAcquiring\Models;
 
-use Avlyalin\SberbankAcquiring\Interfaces\HasPaymentToken as HasPaymentTokenInterface;
-use Avlyalin\SberbankAcquiring\Traits\HasPaymentToken;
+use Timuchen\SberbankAcquiring\Interfaces\HasPaymentToken as HasPaymentTokenInterface;
+use Timuchen\SberbankAcquiring\Traits\HasPaymentToken;
 
 class GooglePayPayment extends BasePaymentModel implements HasPaymentTokenInterface
 {

@@ -2,26 +2,26 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Tests\Clients;
+namespace Timuchen\SberbankAcquiring\Tests\Clients;
 
-use Avlyalin\SberbankAcquiring\Client\ApiClient;
-use Avlyalin\SberbankAcquiring\Client\ApiClientInterface;
-use Avlyalin\SberbankAcquiring\Client\Client;
-use Avlyalin\SberbankAcquiring\Client\HttpClientInterface;
-use Avlyalin\SberbankAcquiring\Client\SberbankResponse;
-use Avlyalin\SberbankAcquiring\Exceptions\ResponseProcessingException;
-use Avlyalin\SberbankAcquiring\Factories\PaymentsFactory;
-use Avlyalin\SberbankAcquiring\Helpers\Currency;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPayment;
-use Avlyalin\SberbankAcquiring\Models\ApplePayPayment;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentOperationType;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentStatus;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentSystem;
-use Avlyalin\SberbankAcquiring\Models\GooglePayPayment;
-use Avlyalin\SberbankAcquiring\Models\SamsungPayPayment;
-use Avlyalin\SberbankAcquiring\Models\SberbankPayment;
-use Avlyalin\SberbankAcquiring\Tests\TestCase;
-use Avlyalin\SberbankAcquiring\Traits\HasConfig;
+use Timuchen\SberbankAcquiring\Client\ApiClient;
+use Timuchen\SberbankAcquiring\Client\ApiClientInterface;
+use Timuchen\SberbankAcquiring\Client\Client;
+use Timuchen\SberbankAcquiring\Client\HttpClientInterface;
+use Timuchen\SberbankAcquiring\Client\SberbankResponse;
+use Timuchen\SberbankAcquiring\Exceptions\ResponseProcessingException;
+use Timuchen\SberbankAcquiring\Factories\PaymentsFactory;
+use Timuchen\SberbankAcquiring\Helpers\Currency;
+use Timuchen\SberbankAcquiring\Models\AcquiringPayment;
+use Timuchen\SberbankAcquiring\Models\ApplePayPayment;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentOperationType;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentStatus;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentSystem;
+use Timuchen\SberbankAcquiring\Models\GooglePayPayment;
+use Timuchen\SberbankAcquiring\Models\SamsungPayPayment;
+use Timuchen\SberbankAcquiring\Models\SberbankPayment;
+use Timuchen\SberbankAcquiring\Tests\TestCase;
+use Timuchen\SberbankAcquiring\Traits\HasConfig;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Config;

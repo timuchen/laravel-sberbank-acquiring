@@ -1,6 +1,6 @@
 <?php
 
-namespace Avlyalin\SberbankAcquiring\Client;
+namespace Timuchen\SberbankAcquiring\Client;
 
 interface ApiClientInterface
 {
@@ -37,8 +37,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function register(
@@ -62,8 +62,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function registerPreAuth(
@@ -87,8 +87,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function deposit(
@@ -111,8 +111,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function reverse(
@@ -135,8 +135,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function refund(
@@ -158,8 +158,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function getOrderStatusExtended(
@@ -181,8 +181,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function payWithApplePay(
@@ -206,8 +206,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function payWithSamsungPay(
@@ -233,8 +233,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function payWithGooglePay(
@@ -258,8 +258,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function getReceiptStatus(
@@ -280,8 +280,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function bindCard(
@@ -303,8 +303,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function unBindCard(
@@ -326,8 +326,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function getBindings(
@@ -348,8 +348,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function getBindingsByCardOrId(
@@ -371,8 +371,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function extendBinding(
@@ -395,8 +395,8 @@ interface ApiClientInterface
      *
      * @return SberbankResponse Ответ сервера
      *
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\HttpClientException
-     * @throws \Avlyalin\SberbankAcquiring\Exceptions\NetworkException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\HttpClientException
+     * @throws \Timuchen\SberbankAcquiring\Exceptions\NetworkException
      * @throws \InvalidArgumentException
      */
     public function verifyEnrollment(

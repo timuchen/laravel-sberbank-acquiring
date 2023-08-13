@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Traits;
+namespace Timuchen\SberbankAcquiring\Traits;
 
 trait HasPaymentToken
 {

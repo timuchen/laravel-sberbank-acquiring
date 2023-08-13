@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Events;
+namespace Timuchen\SberbankAcquiring\Events;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;

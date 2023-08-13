@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Factories;
 
-use Avlyalin\SberbankAcquiring\Models\SberbankPayment;
+use Timuchen\SberbankAcquiring\Models\SberbankPayment;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 

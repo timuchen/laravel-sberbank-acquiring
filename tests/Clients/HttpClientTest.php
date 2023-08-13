@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Tests\Clients;
+namespace Timuchen\SberbankAcquiring\Tests\Clients;
 
-use Avlyalin\SberbankAcquiring\Client\Curl\Curl;
-use Avlyalin\SberbankAcquiring\Client\HttpClient;
-use Avlyalin\SberbankAcquiring\Exceptions\HttpClientException;
-use Avlyalin\SberbankAcquiring\Exceptions\NetworkException;
-use Avlyalin\SberbankAcquiring\Tests\TestCase;
+use Timuchen\SberbankAcquiring\Client\Curl\Curl;
+use Timuchen\SberbankAcquiring\Client\HttpClient;
+use Timuchen\SberbankAcquiring\Exceptions\HttpClientException;
+use Timuchen\SberbankAcquiring\Exceptions\NetworkException;
+use Timuchen\SberbankAcquiring\Tests\TestCase;
 
 class HttpClientTest extends TestCase
 {

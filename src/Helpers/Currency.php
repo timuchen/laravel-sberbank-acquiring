@@ -1,6 +1,6 @@
 <?php
 
-namespace Avlyalin\SberbankAcquiring\Helpers;
+namespace Timuchen\SberbankAcquiring\Helpers;
 
 class Currency
 {

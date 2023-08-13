@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Repositories;
+namespace Timuchen\SberbankAcquiring\Repositories;
 
 use Illuminate\Database\Eloquent\Model;
 

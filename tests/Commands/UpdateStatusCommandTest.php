@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Tests\Commands;
+namespace Timuchen\SberbankAcquiring\Tests\Commands;
 
-use Avlyalin\SberbankAcquiring\Client\Client;
-use Avlyalin\SberbankAcquiring\Commands\UpdateStatusCommand;
-use Avlyalin\SberbankAcquiring\Events\UpdateStatusCommandHasFailed;
-use Avlyalin\SberbankAcquiring\Models\AcquiringPaymentStatus;
-use Avlyalin\SberbankAcquiring\Repositories\AcquiringPaymentRepository;
-use Avlyalin\SberbankAcquiring\Tests\TestCase;
+use Timuchen\SberbankAcquiring\Client\Client;
+use Timuchen\SberbankAcquiring\Commands\UpdateStatusCommand;
+use Timuchen\SberbankAcquiring\Events\UpdateStatusCommandHasFailed;
+use Timuchen\SberbankAcquiring\Models\AcquiringPaymentStatus;
+use Timuchen\SberbankAcquiring\Repositories\AcquiringPaymentRepository;
+use Timuchen\SberbankAcquiring\Tests\TestCase;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Event;
 

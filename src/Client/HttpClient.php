@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Avlyalin\SberbankAcquiring\Client;
+namespace Timuchen\SberbankAcquiring\Client;
 
-use Avlyalin\SberbankAcquiring\Client\Curl\CurlInterface;
-use Avlyalin\SberbankAcquiring\Exceptions\HttpClientException;
-use Avlyalin\SberbankAcquiring\Exceptions\NetworkException;
+use Timuchen\SberbankAcquiring\Client\Curl\CurlInterface;
+use Timuchen\SberbankAcquiring\Exceptions\HttpClientException;
+use Timuchen\SberbankAcquiring\Exceptions\NetworkException;
 
 class HttpClient implements HttpClientInterface
 {
